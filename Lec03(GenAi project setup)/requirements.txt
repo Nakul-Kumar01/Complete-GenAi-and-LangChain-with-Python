@@ -1,0 +1,15 @@
+
+langchain
+langchain-openai
+dotenv
+langchain-google-genai
+streamlit
+langchain-ollama
+langchain-groq
+langchain-community
+langgraph        
+pypdf           # for pdf loading
+beautifulsoup4     # for html loading
+wikipedia   # for load from wikipedia
+langchain-text-splitters   
+langchain-chroma  # for vector DB

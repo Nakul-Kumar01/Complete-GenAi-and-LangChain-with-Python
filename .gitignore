@@ -1,0 +1,57 @@
+# =========================
+# Environment variables / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# Python Virtual Environment
+# =========================
+env/
+venv/
+.venv/
+
+
+# =========================
+# Python Cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+
+# =========================
+# Vector Database / Chroma
+# =========================
+vector_db/
+chroma_db/
+chroma/
+chroma.sqlite3
+
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Logs
+# =========================
+*.log
