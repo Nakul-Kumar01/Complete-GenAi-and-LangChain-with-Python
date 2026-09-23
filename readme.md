@@ -1,7 +1,7 @@
 
 
 """
-- Revision : Lec 17
+- Revision : Lec 17, 24
 
 
 ##### Lec03  #####:
@@ -267,7 +267,7 @@ if not then check which tool can perform this task.
 llm will generate the required arguments for that tool.
 and then call that tool and wait for result.
 now tool will send result to llm, now llm will check
-whether it is required result, then llm will reform it 
+whether it is required result if not then again call the tool, after the required result then llm will reform it 
 in human language
 
 
@@ -672,5 +672,39 @@ Store vectors + documents in Chroma
 
 
 - then we will create chain of : context_generater | prompt | llm | strParser
+
+
+
+
+
+
+
+
+
+
+
+
+#### Lec 24 - Agentic RAG System     ## File - notebook 14
+
+- Indexing phase is same as of normal rag system
+
+- Retrival phase : when user asks multiple questions in single query:-
+then in simple RAG their may be chances that it will fetch only data related to single query
+but in Agentic Rag it will fetch data related to both question
+
+- also when their is multiple Vector Db then also AI agent will help us to tell from which DB we hv to fetch the embeddings 
+
+
+- In notebook 13 project , we call get_context function always, it is simply a function not tool, also it is called once only(context mila ho ya na mila ho)
+
+- In this project retriever_tool is called when it is needed, and can be called multiple times, ye ek llm ka tool hai jisko llm jb chahe call kr skta hai 
+- bss hmne tool banake llm ko dedeya abb langchain khud sbb sambhal lega: jese tool ko agrgument pass krna / tool ka return hua data ko handle krna
+
+
+- jb tk Agent ko required data nhi mill jata tb tk tool ko call krte rahenge
+
+
+- tool ko hmm directly call nhi kr skte tool() ,no
+- tool ko hmm invoke kr skte hai , tool.invoke(arguments)
 
 """
