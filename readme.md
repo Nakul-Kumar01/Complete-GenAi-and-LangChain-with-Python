@@ -765,4 +765,10 @@ Response
 
 - ** Here, you define how different agents interact and control the flow  **
 
+
+
+- in LangGraph we have to maintain the state : like user questoin, requirement, result of every state  -> we hv to store all this data in Global state
+
+
+
 """
