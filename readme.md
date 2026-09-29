@@ -720,7 +720,7 @@ but in Agentic Rag it will fetch data related to both question
 
 ### Lec 25 - Agentic RAG Chatbot with PDF Upload      ## File : apps 4
 
-
+-- PROJECT
 
 
 
