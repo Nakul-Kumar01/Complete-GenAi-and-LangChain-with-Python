@@ -707,4 +707,62 @@ but in Agentic Rag it will fetch data related to both question
 - tool ko hmm directly call nhi kr skte tool() ,no
 - tool ko hmm invoke kr skte hai , tool.invoke(arguments)
 
+
+
+
+
+
+
+
+
+
+
+
+### Lec 25 - Agentic RAG Chatbot with PDF Upload      ## File : apps 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Lec 27 - LangGraph         ## File: notebook 14
+
+- with langChain we can build AI Agent and can perform specific task with that AI Agent
+
+- with LangGraph we can build multi AI Agent system
+
+
+
+
+------  How LangChain works ??   ----------
+- when user asks a query then LLM
+- now LLM hv 2 choices , if LLM is capable of answering then it will answer oterwise it take help of tools then answer
+- we are connecting language model in linear chain
+- Usually more straightforward/linear
+
+
+User
+ ↓
+LLM Agent
+ ↓
+Tool 1 / Tool 2 / Tool 3
+ ↓
+Response
+
+
+
+
+------  How LangGraph works ??   ---------
+- good for multiple agents working together
+- Supports loops, branching, retries, human approval, memory/state
+
+- ** Here, you define how different agents interact and control the flow  **
+
 """
