@@ -771,4 +771,36 @@ Response
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Lec 28 - QnA Chatbot with Memory using LangGraph       ## File: notebook 17    and    app 5
+
+ - storing data:
+   - list of history
+   - langGraph Checkpoint
+   - chroma Vector DB  (to store embedding)
+   - langchain_community.vectorstores import InMemoryVectorStore  (to store embedding)
+
+
+
+- to build graph : build all nodes  -> build edges -> finalGraph
+
+
+
+
+
+
+
+### Lec29 - Multi AI Agentic System          ## File : 
 """
