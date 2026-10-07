@@ -171,7 +171,7 @@ f"Hello {name}"   # Python replaces {name}
 
 - it is useful when i want to use an API, then we can send this structured o/p as payload
 
-
+- when llm work with structured o/p, it always return answer in structure, whehter we ask question off topic or not
 
 
 
@@ -798,9 +798,66 @@ Response
 
 
 
+- In LangGraph, every node returns a state update, not necessarily the entire global state.
+- LangGraph merges that update into the existing state:
+
+Before:
+messages = [...]
+count = 5
+
+          ↓ node
+
+Update:
+count = 6
+
+          ↓ LangGraph
+
+After:
+messages = [...]
+count = 6
 
 
 
 
-### Lec29 - Multi AI Agentic System          ## File : 
+
+
+
+
+
+
+### Lec29 - Multi AI Agentic System          ## File : notebook 18
+
+┌─────────────────────────────────┐
+│           User Input            │
+└────────────────┬────────────────┘
+                 │
+                 │ Coding, Weather, Google Search
+                 ▼
+┌─────────────────────────────────┐
+│        Question Category        │
+└────────────────┬────────────────┘
+                 │
+                 ▼
+┌─────────────────────────────────┐
+│              Route              ├────────► Conditional Node
+└────────────────┬────────────────┘
+                 │
+        ┌────────┼────────┐
+        │        │        │
+        ▼        ▼        ▼
+ ┌──────────────┐│┌──────────────┐
+ │Google Search │││ Weather Node │
+ └──────┬───────┘│└──────┬───────┘
+        │   ┌────┴────┐  │
+        │   │ Coding  │  │
+        │   └────┬────┘  │
+        │        │       │
+        └───────►▼◄──────┘
+            ┌─────────┐
+            │   END   │
+            └─────────┘
+
+
+
+            
 """
