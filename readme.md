@@ -771,7 +771,8 @@ Response
 
 
 
-
+- when user asks any query then final result of langGraph is the state
+   basically state hi return hoti hai at last
 
 
 
@@ -869,6 +870,7 @@ count = 6
 ###   Lec 30 : Build RAG Pipeline using LangGraph     ## File : notebook 19
 
 
+- ##### Node  :    question -> retrive  ->  context  ->  generate  ->  end
 
 
 
