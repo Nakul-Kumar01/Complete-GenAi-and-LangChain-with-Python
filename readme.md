@@ -490,7 +490,7 @@ soln : RAG based system
 1) Load the Document
 2) split the docs in Chunks
 3) generate Vector Embeddings
-4) store in Vector DB
+4) store in Vector DB  (vector Embeddings + respective document)
 
 this is One Time Process
 
@@ -859,5 +859,18 @@ count = 6
 
 
 
-            
+
+
+
+
+
+
+
+###   Lec 30 : Build RAG Pipeline using LangGraph     ## File : notebook 19
+
+
+
+
+
+
 """
