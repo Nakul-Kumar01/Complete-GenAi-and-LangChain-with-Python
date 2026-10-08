@@ -885,12 +885,12 @@ count = 6
 
 
 
-###  Lec 31 : LangGraph Human-in-the-Loop
+###  Lec 31 : LangGraph Human-in-the-Loop      ## File : notebook 20
 
 
 - Human in the Loop : an architectural pattern where autonomus AI agents pause their automated workflows to seek human approval, guidance or verification before proceeding with a task
 
-
+- Project : send Email with Human Approval with history maintained by langGraph
 
 
            +---------+
@@ -919,6 +919,13 @@ count = 6
 
 
 
+
+- interrupt      ## helps to stop at particular node and wait for feedback
+- command        ## helps to command our graph  , so that we can provide the feedback
+
+
+
+- we hv seen in multiple agents they asks feedback after every step, this is what we are implementing
 
 
 """
