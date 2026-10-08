@@ -870,7 +870,53 @@ count = 6
 ###   Lec 30 : Build RAG Pipeline using LangGraph     ## File : notebook 19
 
 
-- ##### Node  :    question -> retrive  ->  context  ->  generate  ->  end
+- Node  :    question -> retrive  ->  context  ->  generate  ->  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###  Lec 31 : LangGraph Human-in-the-Loop
+
+
+- Human in the Loop : an architectural pattern where autonomus AI agents pause their automated workflows to seek human approval, guidance or verification before proceeding with a task
+
+
+
+
+           +---------+
+           |  Start  |
+           +---------+
+                |
+                v
+         +-------------+
+    +--> | draft_email |
+    |    +-------------+
+    |           |
+    |           v
+    |    +-------------------+
+    +--- |  human_feedback   |
+         +-------------------+
+                |
+                v
+           +---------+
+           |  Send   |
+           +---------+
+                |
+                v
+           +---------+
+           |   End   |
+           +---------+
+
 
 
 
