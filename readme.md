@@ -926,6 +926,23 @@ count = 6
 
 
 - we hv seen in multiple agents they asks feedback after every step, this is what we are implementing
+- in claude in agentic mode it asks for feedback after every step
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###   Lec 32 : Multi-Agent Blog Generator with Human-in-the-Loop       ## 
+
 
 
 """
