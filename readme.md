@@ -941,8 +941,21 @@ count = 6
 
 
 
-###   Lec 32 : Multi-Agent Blog Generator with Human-in-the-Loop       ## 
+###   Lec 32 : Multi-Agent Blog Generator with Human-in-the-Loop       ## Folder : blog generator
 
 
+
+-   START   ->    RESEARCHER      ->   HITL    ->  WRITER    -> HITL     ->   FINAL BLOG(EDITOR)    -> HUMAN APROVEL FOR POST IT    ->  POST OR NOT    -> POST IT   -> END
+
+
+
+1) build the complete Flow
+2) now define the Blogstate with its fields
+3) Build the agents
+   - Research Agent
+   - Writer Agent
+   - Editor Agent
+
+4) now build Graph
 
 """
