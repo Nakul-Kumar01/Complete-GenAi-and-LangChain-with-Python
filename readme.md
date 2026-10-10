@@ -957,5 +957,6 @@ count = 6
    - Editor Agent
 
 4) now build Graph
+   - Build Nodes
 
 """
