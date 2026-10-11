@@ -956,7 +956,8 @@ count = 6
    - Writer Agent
    - Editor Agent
 
-4) now build Graph
-   - Build Nodes
+4) now build Graph    (hm conditional node ko graph mei add nhi krte, since they don't return State object)
+   - Build Nodes   :  researcher node -> HITL   -> writer node ->  HITL  ->  Editor Node
+   - Build Conditional node
 
 """
