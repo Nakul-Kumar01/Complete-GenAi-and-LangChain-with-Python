@@ -147,3 +147,44 @@ def route_after_research_review(state:BlogState) -> Literal["research","writer"]
 
 
 
+def route_after_writer_review(state:BlogState) -> Literal["editor","writer"]:
+    if state.draft_feedback  and state.revision_count < MAX_REVISION:
+        return "writer"
+    else:
+        return "editor"
+
+
+
+
+
+###  Build graph
+
+# build and compile the graph
+def build_blog_graph():
+    builder = StateGraph(BlogState)
+
+    # add nodes
+    builder.add_node("research",researcher_node)
+    builder.add_node("review_research",Human_review_research_node)
+    builder.add_node("writer",writer_node)
+    builder.add_node("review_draft",Human_review_draft_node)
+    builder.add_node("editor",editor_node)
+
+    # add edges
+    builder.add_edge(START,"research")
+    builder.add_edge("research","review_research")
+    builder.add_conditional_edges("review_research",
+                                  route_after_research_review,   ## yaha tk bhi work krta
+                                  {"research":"research", "writer":"writer"}   ## to add additional configuration like ye hota to : "research":"editor"  , agr research return hua then go to editor directly
+                                  )  
+    builder.add_edge("writer","review_draft")
+    builder.add_conditional_edges("review_draft",
+                                  route_after_writer_review,
+                                  {"writer":"writer","editor":"editor"})
+
+
+    builder.add_edge("editor",END)
+
+
+    graph = builder.compile(checkpointer= InMemorySaver())
+    return graph

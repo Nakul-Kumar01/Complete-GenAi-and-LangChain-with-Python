@@ -958,6 +958,14 @@ count = 6
 
 4) now build Graph    (hm conditional node ko graph mei add nhi krte, since they don't return State object)
    - Build Nodes   :  researcher node -> HITL   -> writer node ->  HITL  ->  Editor Node
-   - Build Conditional node
+   - Build Conditional node  : route after research review     and    route after writer review
+
+   - now add nodes, add edges and conditional edges then compile it
+
+
+
+
+
+HOMEWORK : build it complete with streamlit interface  + you can add another node to directly publish the blog to particular social media   + Learn Deployment
 
 """
